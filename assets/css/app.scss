@@ -1,5 +1,18 @@
-$mercury: #e8e8e8;
+@import "~bootstrap/scss/bootstrap";
+
+$theme-colors: (
+  "primary": #23cba7,
+  "danger": #ff4136
+);
+
+$jaffa: #f27935;
+$outer-space:#2e3131;
+$java: #23cba7;
 
 body {
-    background-color: $mercury;
+    background-color: theme-color("primary");
+}
+
+.navbar {
+    background-color: $outer-space;
 }
