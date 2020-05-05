@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	{% if error %}
+		<h1 style="color: red">
+			{{ error }}
+			<h1>
+			{% else %}
+				<h1>
+					{{ slug }}
+				</h1>
+		{% endif %}
+
+{% endblock %}

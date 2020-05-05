@@ -12,7 +12,9 @@
 	</head>
 	<body>
 		<header>
-			{% include 'navbar.html.twig' %}
+			{% if not '404.html.twig' %}
+				{% include 'navbar.html.twig' %}
+			{% endif %}
 		</header>
 		{% block body %}{% endblock %}
 		{% block javascripts %}

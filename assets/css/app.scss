@@ -1,18 +1,24 @@
 @import "~bootstrap/scss/bootstrap";
 
-$theme-colors: (
-  "primary": #23cba7,
-  "danger": #ff4136
-);
+$theme-colors: ("primary": #23cba7,
+  "danger": #ff4136);
 
 $jaffa: #f27935;
 $outer-space:#2e3131;
 $java: #23cba7;
 
 body {
-    background-color: theme-color("primary");
+  background-color: theme-color("primary");
 }
 
 .navbar {
-    background-color: $outer-space;
+  background-color: $outer-space;
+}
+
+#error-page {
+  background-image: url('../img/error-404.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
