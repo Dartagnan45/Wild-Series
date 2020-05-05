@@ -23,7 +23,7 @@ class WildController extends AbstractController
      */
     public function show(?string $slug = null, ?string $error = null): Response
     {
-        if (preg_match('#\_#', $slug)) {
+        if (preg_match('#[A-Z\_]#', $slug)) {
             return $this->redirectToRoute('wild_error');
         } elseif (!$slug) {
             $error = "Aucune série sélectionnée, veuillez choisir une série";
