@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+	<div class="container mt-5">
+		<h1>All TV shows from category: "{{ categoryName }}" 
+		</h1>
+		{% for program in programs %}
+			<div>
+				<p style="color: red">{{ program.title }}</p>
+					<p>{{ program.summary }}</p>
+			</div>
+		{% endfor %}
+	</div>
+{% endblock %}
